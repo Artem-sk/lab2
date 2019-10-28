@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Lab1 Page</title>
+    <title>Lab2 Page</title>
     <meta charset="utf-8">
+    <style>
+    body 
+    {
+        background-image: url(helloween.jpg);
+    }
+    
+    </style>
+<link rel="stylesheet" href="Lab2-css.css">
     </head>
     <body>
+        
+        <img src="helloween.gif" alt="12123" style="background: blueviolet;float:right">
     
-    <p>Общее количество перестановок из <em>n</em> элементов равно <strong>
-        произведению всех целых чисел</strong> от <em>1</em> до <em>n</em>:
-         P<sub>n</sub>=1&bull;2&bull;3&bull;...&bull;(n-2)&bull;(n-1)&bull;n</p>
+    <p><span class ="strike-style">Общее</span> <span class="bold-style">количество</span> <span class ="underline-style">перестановок</span> из <span class="italic-style">n</span> элементов равно <span id="txt1">
+        произведению всех целых чисел</span> от <span class="italic-style">1</span> до <span class="italic-style">n</span>:
+        <br>P<sub>n</sub>=1&bull;2&bull;3&bull;...&bull;(n-2)&bull;(n-1)&bull;n</p>
 
-         <dl>
-                <dt>ІМпк</dt>
+         <dl style="background:chocolate; border: 5pt solid purple; width: fit-content; padding: 10pt; float: right;">
+                <dt style="color: aqua;">ІМпк</dt>
                 <dd>Іноземна мова для професійної комунікації</dd>
-                <dt>АК</dt>
+                <dt style="color: blue;">АК</dt>
                 <dd>Архітектура комп'ютерів</dd>
-                <dt>ІТех</dt>
+                <dt style="color: crimson;">ІТех</dt>
                 <dd>Інтернет технології</dd>
-                <dt>КСх</dt>
+                <dt style="color: darkslateblue;">КСх</dt>
                 <dd>Комп'ютерна схемотехніка</dd>
-                <dt>МодС</dt>
+                <dt style="color: firebrick;">МодС</dt>
                 <dd>Моделювання систем</dd>
-                <dt>СКБД</dt>
+                <dt style="color: gold;">СКБД</dt>
                 <dd>Системи керування базами даних</dd>
-                <dt>СПЗ</dt>
+                <dt style="color: indigo;">СПЗ</dt>
                 <dd>Системне програмне забезпечення</dd>
-                <dt>ФВх</dt>
+                <dt style="color: lawngreen;">ФВх</dt>
                 <dd>Фізичне виховання</dd>
-                <dt>ФПвМ</dt>
+                <dt style="color: lime;">ФПвМ</dt>
                 <dd>Функціональне програмування в моделюванні</dd>
          </dl>
 
-        <table border="1">
+        <table id = "table1">
                 <tr>
                         <th rowspan="2">Період</th>
                         <th rowspan="2">Ряд</th>
@@ -68,33 +78,33 @@
         </table>
         <br>
 
-        <form>
+        <div class = "abs">absolute</div>
+        <div class = "rel" style="width: fit-content;">relative</div>
+
+        <form class="my-form">
             <strong>Форма для ввода информации о комплектующих ПК</strong>
             <br><br>
             Модель процесора: 
             <input type="text" name="cpu" value="Intel Core i3">
             <br><br>
             Монітор:
-            <select name="monitor">
-                    <option>Монітор 1</option>
-                    <option>Монітор 2</option>
-                    <option>Монітор 3</option>
-            </select>
-            
+            <br>
+            <input type="radio" name="monitor" id="r1"><label for = "r1">Монитор 1</label> 
+            <input type="radio" name="monitor" id="r2"><label for = "r2">Монитор 2</label>
+            <input type="radio" name="monitor" id="r3"><label for = "r3">Монитор 3</label>
             <br><br>
             <input type="submit">
             <input type="reset">
         </form>
 
-<img src="nure.jpg"  usemap="#university" alt="nure">
-
-<map name = "university" >
-<area shape ="rect" coords="420, 290,490,450" href="https://nure.ua" target="_blank">
-<area shape ="rect" coords="560, 290,650,450" href="http://cist.nure.ua" target="_blank">
-<area shape ="rect" coords="700, 290,790,450" href="http://dec.nure.ua" target="_blank">
 
 
-</map>
-
+        <div id="div-container">
+            <div id="div1">ПЕРВЫЙ</div>
+            <div id="div2">ВТОРОЙ</div>
+            <div id="div3">ТРЕТИЙ</div>
+            <img id = "img1" src="helloween2.png" alt="helloween2">
+        </div>
+       
     </body>
 </html>

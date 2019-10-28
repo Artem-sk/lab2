@@ -1,0 +1,176 @@
+p
+{
+    background: darkgoldenrod;
+    width: 300px;
+    padding: 10pt;
+    margin: 10pt;
+    border: 5pt solid purple;
+}
+
+#table1
+{
+    background: indianred;
+    border: 5pt solid purple;
+    border-collapse: collapse;
+    margin-top: 23pt;
+}
+tr,td,th 
+{
+border: 3pt solid mediumorchid;
+padding: 7pt;
+}
+td
+{
+    color: white;
+}
+
+
+#txt1
+{
+    font-family: "My font1";
+}
+.italic-style
+{
+    font-style: italic
+}
+.bold-style
+{
+    font-weight: bold;
+}
+.underline-style
+{
+    text-decoration: underline green;
+}
+.strike-style
+{
+    text-decoration: line-through red;
+}
+
+.my-form
+{
+    background: rgb(241, 206, 116);
+    padding: 10pt;
+    padding-left: 50pt;
+    padding-right: 50pt;
+    clear: both;
+    margin: 20pt;
+    
+    text-align: center;
+    border: 5pt solid purple;
+    width: fit-content;
+
+}
+
+.rel
+{
+    background: blue;
+    padding: 5pt;
+    position: relative;
+    left:20px;
+    bottom:0px;
+    width: fit-content;
+
+}
+.abs
+{
+    background: green;
+    padding: 5pt;
+    position: absolute;
+    left:25px;
+    top:460px;
+    
+}
+
+input[type=radio]
+{
+  visibility: hidden;
+}
+input[type=radio] + label:before
+{
+  height:10px;
+  width:10px;
+  margin-right: 3px;
+  content: " ";
+  display:inline-block;
+  border:2px solid rgb(116, 13, 116);
+  border-radius:50%;
+}
+input[type=radio]:checked + label:before
+{
+  background:rgba(252, 126, 9, 0.979);
+}
+
+
+
+
+#div-container
+{
+    display: flex;
+    justify-content: center;
+    background: wheat;
+    align-items: baseline;
+    padding: 20pt;
+    margin: 20pt;
+    border: 3pt solid purple;
+    animation: flex-anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+#div1 
+{
+    background: green;
+    padding: 20pt;
+    width: fit-content;
+    margin: 10pt;
+    order: 3;
+}
+
+#div2
+{
+    padding: 30pt;
+    background: yellow;
+    border-radius: 50%;
+    margin: 10pt;
+    order:4; 
+}
+#div3
+{
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    border-top: 100px solid blue;
+    margin: 10pt; 
+    order:1;
+
+}
+#img1
+{
+    width: 200px;
+    height: 200px;
+    margin: 10pt; 
+    align-self: center;
+    order: 2;
+}
+
+
+@keyframes flex-anim
+{
+    from
+    {
+    
+        background: white;
+    }
+    to
+    {
+        background: black;
+    }
+}
+
+@font-face
+{
+    font-family: "My font1";
+    src:local("font1"), 
+    url("font1.ttf") format("truetype");
+}
